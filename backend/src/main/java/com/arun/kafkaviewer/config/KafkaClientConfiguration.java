@@ -14,7 +14,7 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 public class KafkaClientConfiguration {
 
     @Bean(destroyMethod = "close")
-    Admin kafkaAdmin(KafkaProperties properties) {
+    Admin viewerAdmin(KafkaProperties properties) {
         return Admin.create(Map.of(
                 AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,
                 String.join(",", properties.getBootstrapServers())));

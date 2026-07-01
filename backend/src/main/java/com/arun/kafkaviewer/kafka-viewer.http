@@ -1,0 +1,11 @@
+### List Kafka topics
+GET http://localhost:8081/api/topics
+
+### List topic partitions
+GET http://localhost:8081/api/topics/developer-events/partitions
+
+### Read latest messages
+GET http://localhost:8081/api/topics/developer-events/messages?limit=10
+
+### Read partition 0
+GET http://localhost:8081/api/topics/developer-events/messages?partition=0&limit=10

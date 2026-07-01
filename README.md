@@ -35,6 +35,10 @@ The viewer uses manual partition assignment, disables automatic commits and auto
 
 The maximum page size and poll timeout can be changed in `backend/src/main/resources/application.yml`.
 
+## Partner Data integration
+
+For the complete local Partner Data, Kafka, Schema Registry, IntelliJ HTTP Client, and troubleshooting workflow, see [Partner Data local Kafka guide](docs/partner-data-local-kafka-guide.md).
+
 ## Build the complete Compose stack
 
 The backend image expects a packaged JAR:
